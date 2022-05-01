@@ -1,4 +1,4 @@
-//UC3- Ability to Calculate Daily Employee Wage based on part time or full time work using switchcase and get employee hrs. 
+//UC3- Ability to Calculate Daily Employee Wage based on part time or full time work using switchcase and get employee working hrs. 
 const IS_ABSENT = 0;
 const IS_PART_TIME = 1;
 const IS_FULL_TIME = 2;
