@@ -1,4 +1,4 @@
-//UC5-Calculating  Wages till a condition of total workinghours of 160 or max days of 20 is reached for a month
+//UC6-Store the daily employee wage
 const IS_ABSENT = 0;
 const IS_PART_TIME = 1;
 const IS_FULL_TIME = 2;
@@ -12,6 +12,7 @@ let totalEmpHrs = 0;
 let totalWorkingDays = 0;
 let empHrs = 0;
 let dailyEmpHrs = 0;
+let dailyempwage = 0;
 
 while (totalEmpHrs <= MAX_WORKING_HOURS && totalWorkingDays <= MAX_WORKING_DAYS) {
     
@@ -31,6 +32,8 @@ while (totalEmpHrs <= MAX_WORKING_HOURS && totalWorkingDays <= MAX_WORKING_DAYS)
             break
     }
     totalEmpHrs += dailyEmpHrs;
+    dailyempwage = dailyEmpHrs*WAGE_PER_HOUR;
+    console.log("Daily Wage of Day"+totalWorkingDays+": "+ dailyempwage);
     
 }
 let empWage = totalEmpHrs * WAGE_PER_HOUR;
